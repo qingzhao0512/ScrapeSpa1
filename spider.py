@@ -1,8 +1,40 @@
+'''
+Author: qingzhao0512 qingzhao0512@gmail.com
+Date: 2024-05-06 14:39:27
+LastEditors: qingzhao0512 qingzhao0512@gmail.com
+LastEditTime: 2024-05-06 15:04:01
+FilePath: \ScrapeSpa1\spider.py
+Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+'''
 import requests
 import logging
 import json
 from os import makedirs
 from os.path import exists
+
+
+url = 'https://spa1.scrape.center/'
+html = requests.get(url).text
+print(html)
+
+
+
+url = 'https://ssr1.scrape.center/'
+html = requests.get(url).text
+print(html)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s: %(message)s')
